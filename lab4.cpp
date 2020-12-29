@@ -212,7 +212,7 @@ int main()
  connection * bongus = new connection(" "," ",0,0,0);
  vector<connection *> routes; 
  ifstream fin;
- fin.open("/mnt/c/c++/data/intersections.txt");
+ fin.open("./data/intersections.txt");
  if (fin.fail())
  {
   cout<<"fail\n";
@@ -239,7 +239,7 @@ int main()
   counter ++;
 }
  fin.close();
- fin.open("/mnt/c/c++/data/connections.txt");
+ fin.open("./data/connections.txt");
  if(fin.fail())
   {cout<<"error\n";
    exit(1);}
